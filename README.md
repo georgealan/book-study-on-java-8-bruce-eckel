@@ -4,6 +4,8 @@
      💻 <a href="https://www.onjava8.com/" alt="Bruce Eckel - On Java 8 Book Official Site" target="_blank"> On Java 8 by Bruce Eckel </a>
 </h1>
 
+![](https://raw.githubusercontent.com/georgealan/book-study-on-java-8-bruce-eckel/main/assets/OnJava8Banner.jpg)
+
 <h3 align="center">
     🏆 On Java 8 covers version 8 of the Java programming language. Version 2 (December 2021) includes independent supplemental subsections that cover features through Java 17. 💚
 </h3>
