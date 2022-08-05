@@ -2,7 +2,7 @@ package Final_keyword;
 
 /**
  * The fields of a class final can be final or not, as you choose. The same rules apply to final for fields
- * regardless of whether the class is defined as final. However because it prevents inheritance. all methods ia a
+ * regardless of whether the class is defined as final. However, because it prevents inheritance. all methods ia a
  * final class are implicitly final because there's no way to override them.
  * You can include the final specifier to a method in a final class, but is doesn't add any meaning.
  */
