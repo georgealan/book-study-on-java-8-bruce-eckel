@@ -73,5 +73,3 @@ public class LocalInnerClass {
         class.
      */
 }
-
-// TODO Continue in page 403 - New Chapter Collections
