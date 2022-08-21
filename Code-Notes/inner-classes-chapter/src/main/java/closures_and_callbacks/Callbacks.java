@@ -26,6 +26,11 @@ class MyIncrement {
 class Callee2 extends MyIncrement {
     private int i = 0;
 
+    /*
+        When MyIncrement is inherited into Callee2, increment() can’t be overridden for use by Incrementable,
+        so you’re forced to provide a separate implementation using an inner class. Also note that when you
+        create an inner class, you do not add to or modify the interface of the outer class.
+     */
     @Override
     public void increment() {
         super.increment();
@@ -33,6 +38,12 @@ class Callee2 extends MyIncrement {
         System.out.println(i);
     }
 
+    /*
+        The inner class Closure implements Incrementable to provide a hook back into
+        Callee2—but a safe hook. Whoever gets the Incrementable reference can only call
+        increment() and has no other abilities (unlike a pointer, which would allow you to
+        run wild).
+     */
     private class Closure implements Incrementable {
         @Override
         public void increment() {
@@ -41,11 +52,22 @@ class Callee2 extends MyIncrement {
         }
     }
 
+    /*
+        Everything except getCallbackReference() in Callee2 is private. To allow any
+        connection to the outside world, the interface Incrementable is essential. Here you
+        see how interfaces allow for a complete separation of interface from implementation.
+     */
+
     Incrementable getCallbackReference() {
         return new Closure();
     }
 }
 
+/*
+    Caller takes an Incrementable reference in its constructor (although capturing
+    the callback reference can happen at any time) and then, sometime later, uses the
+    reference to call back into the Callee class.
+ */
 class Caller {
     private Incrementable callbackReference;
 
@@ -70,8 +92,3 @@ public class Callbacks {
         caller2.go();
     }
 }
-
-/*
-TODO Continue in page 386 - Study this code above, and make some annotations about.
- Until understand!
- */
