@@ -7,7 +7,7 @@ import java.util.*;
 
 /*
 We can produce a cleaner version of the previous example "CrossCollectionIteration"
-by using the Iterable interface, which describes “anything that can produce an Iterator”:
+by using the Iterable interface, which describes "anything that can produce an Iterator":
  */
 
 public class CrossCollectionIteration2 {
