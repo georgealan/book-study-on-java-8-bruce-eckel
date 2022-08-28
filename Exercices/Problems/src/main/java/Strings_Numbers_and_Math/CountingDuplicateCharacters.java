@@ -16,18 +16,22 @@ public class CountingDuplicateCharacters {
     static void countDuplicateCharacters(String s) {
         String wordOrPhrase = verifyIfIsWordOrPhrase(s);
         int numberOfDuplicate = 0;
-        List<Character> duplicateCharecteres = new ArrayList<>();
+        Collection<Character> duplicateCharecteres = new HashSet<>();
         Map<Character, Integer> wordsSplit = new HashMap<>();
         fillAndSplitSentence(wordsSplit, s);
 
+        for (Integer v : wordsSplit.values()) {
+            if (v > 1) {
+                numberOfDuplicate++;
+            }
+        }
 
         /* TODO Find a way to iterate a Map and catch the characters that have a value > 1
-            and put these in a new collection, only for display in text below. And catch the length
-            of that new collection for attribute a variable numberOfDuplicate.
+            and put these in a new collection, only for display in text below.
          */
 
         System.out.println("This " + wordOrPhrase + " Here: \"" + s + "\", contain " + numberOfDuplicate +
-                "characteres duplicated. And the duplicates are these: " + duplicateCharecteres);
+                " characteres duplicated. And the duplicates are these: " + duplicateCharecteres + wordsSplit);
     }
 
     static String verifyIfIsWordOrPhrase(String s) {
