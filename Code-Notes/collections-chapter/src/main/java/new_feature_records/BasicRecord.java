@@ -2,8 +2,6 @@ package new_feature_records;
 
 import java.util.Map;
 
-// TODO Continue in page 446 topic: Queue.
-
 /*
 New Feature: Records
 
