@@ -40,5 +40,3 @@ public class MethodConversion {
     method name (accept(), in this case), not your method name.
      */
 }
-
-// TODO Continue in page 490
