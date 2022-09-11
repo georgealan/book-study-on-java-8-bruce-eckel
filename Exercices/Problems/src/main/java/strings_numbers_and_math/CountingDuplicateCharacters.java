@@ -56,6 +56,12 @@ public class CountingDuplicateCharacters {
         }
 
         return (s.contains(" ")) ? TypeString.PHRASE.getSentence() : TypeString.WORD.getSentence();
+
+        /*
+        TODO - Find a way to adjust this method for verify if an space is followed by a letter aside, because if don't,
+         if are only a word with an empty space in the end, without other letters followed, this are a word not a phrase
+         My first thought are to use regex, but I'll think more about later.
+         */
     }
 
     static Map<String, Long> fillAndSplitSentence(String s) {

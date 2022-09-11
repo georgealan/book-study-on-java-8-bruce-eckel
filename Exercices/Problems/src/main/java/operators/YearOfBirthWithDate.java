@@ -22,11 +22,12 @@ public class YearOfBirthWithDate {
                 System.out.println("You write wrong year numbers format, please try again.");
         }
 
-        calculateHowOldAreYou(Integer.parseInt(actualYear), yearOfBirth);
+        int age = calculateHowOldAreYou(Integer.parseInt(actualYear), yearOfBirth);
+        System.out.println("Your age are: " + age + " years old");
     }
 
-    static void calculateHowOldAreYou(int actualYear, int yearOfBirth) {
+    static int calculateHowOldAreYou(int actualYear, int yearOfBirth) {
         int age = actualYear - yearOfBirth;
-        System.out.println("Your age are: " + age + " years old");
+        return age;
     }
 }

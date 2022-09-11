@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="strings_numbers_and_math.CountingDuplicateCharactersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-09T23:06:31" hostname="DESKTOP-JJTERBG" time="0.044">
-  <properties/>
-  <testcase name="must actual phrase be equal to return of the class method" classname="strings_numbers_and_math.CountingDuplicateCharactersTest" time="0.044"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
