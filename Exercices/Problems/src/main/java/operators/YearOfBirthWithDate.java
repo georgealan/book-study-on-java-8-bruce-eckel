@@ -1,15 +1,16 @@
 package operators;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Scanner;
 
 public class YearOfBirthWithDate {
-    static Date currentDate = new Date();
+    static LocalDate currentDate;
     static int control = 0;
     static int yearOfBirth;
 
     public static void main(String[] args) {
-        String actualYear = currentDate.toString().substring(24);
+        int actualYear = currentDate.getYear();
         Scanner scanner = new Scanner(System.in);
 
         while (control == 0) {
@@ -22,12 +23,11 @@ public class YearOfBirthWithDate {
                 System.out.println("You write wrong year numbers format, please try again.");
         }
 
-        int age = calculateHowOldAreYou(Integer.parseInt(actualYear), yearOfBirth);
+        int age = calculateHowOldAreYou(actualYear, yearOfBirth);
         System.out.println("Your age are: " + age + " years old");
     }
 
     static int calculateHowOldAreYou(int actualYear, int yearOfBirth) {
-        int age = actualYear - yearOfBirth;
-        return age;
+        return actualYear - yearOfBirth;
     }
 }

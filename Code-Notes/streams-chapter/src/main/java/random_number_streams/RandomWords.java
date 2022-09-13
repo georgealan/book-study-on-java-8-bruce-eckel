@@ -51,5 +51,3 @@ public class RandomWords implements Supplier<String> {
                         .collect(Collectors.joining(" ")));
     }
 }
-
-// TODO Continue in page 520, topic Ranges of int.
