@@ -82,5 +82,3 @@ public class StormyInning extends Inning implements Storm {
         }
     }
 }
-
-// TODO Continue in page 610, Exceptions Restrictions
