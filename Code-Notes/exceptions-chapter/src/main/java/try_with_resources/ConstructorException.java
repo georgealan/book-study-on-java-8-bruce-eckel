@@ -35,5 +35,3 @@ because if your constructor fails you can’t assume you can do anything safely 
 that object, including close it. Because of the exception from SecondExcept, the
 Second object s2 is never created, so it is not cleaned up.
  */
-
-// TODO Continue in page 626.
