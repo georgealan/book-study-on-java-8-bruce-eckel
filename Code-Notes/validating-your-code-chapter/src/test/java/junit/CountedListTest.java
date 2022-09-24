@@ -80,5 +80,3 @@ class CountedListTest {
         compare(list, new String[]{ "0", "1", "2", "An", "African", "Swallow" });
     }
 }
-
-// TODO Continue in page 650
