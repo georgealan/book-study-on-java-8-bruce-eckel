@@ -93,10 +93,10 @@ public class DynamicStringInverterTests {
         );
     }
 
-    @TestFactory
+    /*@TestFactory
     Stream<DynamicTest> allowedCharacters() {
 
-    }
+    }*/
 
 }
 
