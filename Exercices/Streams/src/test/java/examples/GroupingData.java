@@ -1,14 +1,11 @@
 package examples;
 
 
-import com.beans.Car;
+import com.george.beans.Car;
 import mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class GroupingData {
 

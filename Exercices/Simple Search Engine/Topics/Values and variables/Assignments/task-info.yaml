@@ -1,0 +1,16 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    val one
+    val two
+    val three
+    val four = 400
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/4384#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Mon, 31 Oct 2022 15:15:24 UTC"
+record: -1

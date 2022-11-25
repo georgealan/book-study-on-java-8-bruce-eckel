@@ -1,12 +1,10 @@
 package examples;
 
 
-import com.beans.Car;
+import com.george.beans.Car;
 import mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 public class StatisticsWithStreams {

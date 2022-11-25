@@ -1,8 +1,8 @@
 package mockdata;
 
 
-import com.beans.Car;
-import com.beans.Person;
+import com.george.beans.Car;
+import com.george.beans.Person;
 import com.google.common.io.Resources;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;

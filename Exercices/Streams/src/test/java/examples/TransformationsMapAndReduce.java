@@ -1,16 +1,12 @@
 package examples;
 
-import com.beans.Car;
-import com.beans.Person;
-import com.beans.PersonDTO;
+import com.george.beans.Car;
+import com.george.beans.Person;
 import mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class TransformationsMapAndReduce {
 

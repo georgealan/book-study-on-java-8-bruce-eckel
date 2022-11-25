@@ -1,15 +1,10 @@
 package examples;
 
-import com.beans.Car;
-import com.beans.Person;
+import com.george.beans.Car;
 import mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.OptionalInt;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Filtering {

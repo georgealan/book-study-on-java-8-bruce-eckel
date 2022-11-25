@@ -11,6 +11,6 @@ public class WorkingWithStreams {
 
     @Test
     void steams() {
-        List<String> names = List.of("Amigoscode", "Alex", "Zara");
+        List<String> names = List.of("George", "Alex", "Zara");
     }
 }

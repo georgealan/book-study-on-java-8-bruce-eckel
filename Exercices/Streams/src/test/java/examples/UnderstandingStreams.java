@@ -1,6 +1,6 @@
 package examples;
 
-import com.beans.Person;
+import com.george.beans.Person;
 import mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
