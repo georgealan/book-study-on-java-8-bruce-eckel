@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.Filtering" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-03T22:19:34" hostname="DESKTOP-JJTERBG" time="0.024">
+  <properties/>
+  <testcase name="findFirst()" classname="examples.Filtering" time="0.024"/>
+  <system-out><![CDATA[-1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
