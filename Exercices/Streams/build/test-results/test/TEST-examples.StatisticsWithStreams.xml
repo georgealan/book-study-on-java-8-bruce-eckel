@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.StatisticsWithStreams" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-13T19:27:26" hostname="DESKTOP-JJTERBG" time="0.124">
-  <properties/>
-  <testcase name="count()" classname="examples.StatisticsWithStreams" time="0.124"/>
-  <system-out><![CDATA[104
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
