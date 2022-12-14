@@ -59,19 +59,29 @@ public class Filtering {
     @Test
     public void findAny() throws Exception {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10};
-
+        int result = Arrays.stream(numbers)
+                .filter(n -> n == 9)
+                .findAny()
+                .orElse(-1);
+        System.out.println(result);
     }
 
     @Test
     public void allMatch() throws Exception {
+        // Here all conditions need to match, if only one don't match, will return false.
         int[] even = {2, 4, 6, 8, 10};
-
+        boolean result = Arrays.stream(even)
+                .allMatch(n -> n % 2 == 0);
+        System.out.println(result);
     }
 
     @Test
     public void anyMatch() throws Exception {
+        // At least if only one object matches the condition, it will be true.
         int[] evenAndOneOdd = {2, 4, 6, 8, 10, 11};
-
+        boolean result = Arrays.stream(evenAndOneOdd)
+                .anyMatch(n -> !(n % 2 == 0));
+        System.out.println(result);
     }
 
 }

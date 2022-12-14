@@ -12,11 +12,20 @@ public class StatisticsWithStreams {
     @Test
     public void count() throws Exception {
         List<Car> cars = MockData.getCars();
+        long count = cars.stream()
+                .filter(car -> car.getMake().equalsIgnoreCase("Ford"))
+                .count();
+
+        System.out.println(count);
     }
 
     @Test
     public void min() throws Exception {
         List<Car> cars = MockData.getCars();
+        double mostCheapCar = cars.stream()
+                .mapToDouble(Car::getPrice)
+                .min()
+                .orElse(0);
     }
 
     @Test
