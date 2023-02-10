@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.GroupingData" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-14T19:41:29" hostname="DESKTOP-JJTERBG" time="0.026">
-  <properties/>
-  <testcase name="groupingAndCounting()" classname="examples.GroupingData" time="0.026"/>
-  <system-out><![CDATA[{Alex=3, Vincent=1, Mariam=1, Mohammado=2, John=2}
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
