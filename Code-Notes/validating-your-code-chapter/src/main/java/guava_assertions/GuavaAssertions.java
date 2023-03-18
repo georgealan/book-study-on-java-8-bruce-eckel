@@ -9,4 +9,4 @@ public class GuavaAssertions {
     }
 }
 
-// TODO Download Google’s Guava library. And return to page 656 for write this example
+// TODO Return to page 652 topic The illusion of test coverage and to page 656 for write this example
