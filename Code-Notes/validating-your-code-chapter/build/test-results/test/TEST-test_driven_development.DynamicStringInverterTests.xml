@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_driven_development.DynamicStringInverterTests" tests="24" skipped="0" failures="0" errors="0" timestamp="2023-03-18T22:26:05" hostname="DESKTOP-JJTERBG" time="0.078">
+  <properties/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.013"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.005"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.004"/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.002"/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.0"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.0"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter1" classname="test_driven_development.DynamicStringInverterTests" time="0.006"/>
+  <testcase name="Inverter2" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter3" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <testcase name="Inverter4" classname="test_driven_development.DynamicStringInverterTests" time="0.001"/>
+  <system-out><![CDATA[>>> Starting DynamicStringInverterTests <<<
+Inverter1: Disallowed characters
+Success
+Inverter2: Disallowed characters
+Success
+Inverter3: Disallowed characters
+Success
+Inverter4: Disallowed characters
+Bad characters: ;-_()*&^%$#@!~`0123456789
+Inverter1: Length must be less than 31 (throws exception)
+Success
+Inverter2: Length must be less than 31 (throws exception)
+Success
+Inverter3: Length must be less than 31 (throws exception)
+Exception: argument to long
+Inverter4: Length must be less than 31 (throws exception)
+Exception: Argument too long!
+Inverter1: Basic inversion (should succeed)
+FAIL: Exit, Pursued by a Bear. != eXIT, pURSUED BY A bEAR
+Inverter2: Basic inversion (should succeed)
+FAIL: eXIT, pURSUED BY A bEAR. != eXIT, pURSUED BY A bEAR
+Inverter3: Basic inversion (should succeed)
+FAIL: eXIT, pURSUED BY A bEAR. != eXIT, pURSUED BY A bEAR
+Inverter4: Basic inversion (should succeed)
+FAIL: eXIT, pURSUED BY A bEAR. != eXIT, pURSUED BY A bEAR
+Inverter1: Basic inversion (should fail)
+Success
+Inverter2: Basic inversion (should fail)
+FAIL: x != X
+Inverter3: Basic inversion (should fail)
+FAIL: x != X
+Inverter4: Basic inversion (should fail)
+FAIL: x != X
+Inverter1: Length must be less than 31 (should succeed)
+Success
+Inverter2: Length must be less than 31 (should succeed)
+Success
+Inverter3: Length must be less than 31 (should succeed)
+Success
+Inverter4: Length must be less than 31 (should succeed)
+Success
+Inverter1: Allowed characters (should succeed)
+Exception: expected: <abcdefghijklmnopqrstuvwxyz ,.> but was: <ABCDEFGHIJKLMNOPQRSTUVWXYZ ,.>
+Inverter2: Allowed characters (should succeed)
+Success
+Inverter3: Allowed characters (should succeed)
+Success
+Inverter4: Allowed characters (should succeed)
+Success
+>>> Finished DynamicStringInverterTests <<<
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

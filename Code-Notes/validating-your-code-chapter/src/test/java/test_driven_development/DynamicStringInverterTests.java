@@ -1,9 +1,7 @@
 package test_driven_development;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +14,8 @@ public class DynamicStringInverterTests {
     Stream<DynamicTest> testVersions(String id, Function<StringInverter, String> test) {
         List<StringInverter> versions = Arrays.asList(
                 new Inverter1(), new Inverter2(),
-                new Inverter3(), new Inverter4());
+                new Inverter3(), new Inverter4()
+        );
 
         return DynamicTest.stream(
             versions.iterator(),
@@ -93,11 +92,47 @@ public class DynamicStringInverterTests {
         );
     }
 
-    /*@TestFactory
+    @TestFactory
     Stream<DynamicTest> allowedCharacters() {
+        String lowcase = "abcdefghijklmnopqrstuvwxyz ,.";
+        String upcase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ,.";
 
-    }*/
+        return testVersions(
+            "Allowed characters (should succeed)",
+                inverter -> {
+                    assertEquals(inverter.invert(lowcase), upcase);
+                    assertEquals(inverter.invert(upcase), lowcase);
+                    return "success";
+                }
+        );
+    }
 
+    @TestFactory
+    Stream<DynamicTest> lenghtNoGreaterThan30() {
+        String str = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        assertTrue(str.length() > 30);
+        return testVersions(
+            "Length must be less than 31 (throws exception)",
+                inverter -> inverter.invert(str)
+        );
+    }
+
+    @TestFactory
+    Stream<DynamicTest> lenghtLessThan31() {
+        String str = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        assertTrue(str.length() < 31);
+        return testVersions(
+                "Length must be less than 31 (should succeed)",
+                inverter -> inverter.invert(str)
+        );
+    }
 }
 
-// TODO Continue in page 676
+/*
+one of the most sophisticated new features in JUnit5: dynamic test generation.
+This is exactly what it sounds like—instead of each test being coded explicitly, you
+can write code that generates tests at runtime. This opens many new possibilities,
+especially in situations where writing a full set of tests explicitly might otherwise be
+prohibitive.
+
+ */

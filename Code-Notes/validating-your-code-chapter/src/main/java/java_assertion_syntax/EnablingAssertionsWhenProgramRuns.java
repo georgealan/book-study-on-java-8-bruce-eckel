@@ -8,7 +8,7 @@ in the main class of your system:
 public class EnablingAssertionsWhenProgramRuns {
     static {
         boolean assertionsEnabled = false;
-        // Note intentonal side effect of assignment
+        // Note intentional side effect of assignment
         assert assertionsEnabled = true;
         if (!assertionsEnabled) {
             throw new RuntimeException("Assertions disabled");

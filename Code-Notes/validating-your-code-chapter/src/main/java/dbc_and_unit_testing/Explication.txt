@@ -1,0 +1,12 @@
+The following example demonstrates the potency of combining concepts from Design
+by Contract with unit testing. It shows a small first-in, first-out (FIFO) queue
+implemented as a “circular” array—that is, an array used in a circular fashion. When
+the end of the array is reached, the class wraps back around to the beginning.
+We can make a number of contractual definitions for this queue:
+
+1. Precondition (for a put()): Null elements are not allowed to be added to the queue.
+2. Precondition (for a put()): It is illegal to put elements into a full queue.
+3. Precondition (for a get()): It is illegal to try to get elements from an empty queue.
+4. Postcondition (for a get()): Null elements cannot be produced from the array.
+5. Invariant: The region that contains objects cannot contain any null elements.
+6. Invariant: The region that doesn’t contain objects must have only null values.
